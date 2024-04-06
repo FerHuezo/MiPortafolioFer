@@ -30,14 +30,13 @@ class activity_Ejer3 : AppCompatActivity() {
         comp.setOnClickListener {
             val inputText = num.text.toString()
             try {
-                val number = inputText.toInt()
-                val resultado = parImpar.vefParImpar(number)
+                val numero = inputText.toInt()
+                val resultado = parImpar.vefParImpar(numero)
                 result.text = resultado
             } catch (e: NumberFormatException) {
                 result.text = "Por favor, ingresa un número entero válido."
             }
         }
-
 
         val btnRegresar = findViewById<ImageButton>(R.id.btnBack)
         btnRegresar.setOnClickListener {
