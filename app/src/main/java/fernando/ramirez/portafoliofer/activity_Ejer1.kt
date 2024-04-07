@@ -24,8 +24,6 @@ class activity_Ejer1 : AppCompatActivity() {
         val anoNaci = findViewById<EditText>(R.id.txtAño)
         val calcu = findViewById<Button>(R.id.btnCalcular)
         val edadU = findViewById<TextView>(R.id.lblEdad)
-
-
         val objEdad = calcularEdad()
 
         calcu.setOnClickListener {

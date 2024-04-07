@@ -13,13 +13,13 @@
         android:layout_height="74dp"
         android:text="Ingrese su Año de Nacimiento"
         android:textAlignment="center"
-        android:textSize="24sp"
+        android:textSize="32sp"
         android:textStyle="bold|italic"
         app:layout_constraintBottom_toTopOf="@+id/txtAño"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.681" />
 
     <Button
         android:id="@+id/btnCalcular"
@@ -28,6 +28,7 @@
         android:text="Calcular Edad"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtAño" />
 
@@ -40,7 +41,7 @@
         android:inputType="number"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.407" />
@@ -53,6 +54,7 @@
         android:textAlignment="center"
         app:layout_constraintBottom_toTopOf="@+id/btnCalcular"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtAño"
         app:layout_constraintVertical_bias="0.121" />
@@ -63,6 +65,7 @@
         android:layout_height="wrap_content"
         android:backgroundTint="#FDF6FE"
         android:backgroundTintMode="src_in"
+        android:contentDescription="sasaaa"
         android:src="@drawable/iconext"
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"

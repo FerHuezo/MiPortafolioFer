@@ -24,12 +24,12 @@ class activity_Ejer2 : AppCompatActivity() {
         val baseA = findViewById<EditText>(R.id.txtBase)
         val alturaA = findViewById<EditText>(R.id.txtAltura)
         val areaT = findViewById<Button>(R.id.btnCalcularA)
-        val areaL = findViewById<TextView>(R.id.lblArea)
+        val res = findViewById<TextView>(R.id.lblArea)
         val objArea = calcularArea()
 
         areaT.setOnClickListener {
             val resultado = objArea.areaTriangulo(baseA.text.toString().toDouble(), alturaA.text.toString().toDouble())
-            areaL.text = "Área del triangulo: $resultado"
+            res.text = "Área del triangulo: $resultado"
             println(resultado)
         }
 
